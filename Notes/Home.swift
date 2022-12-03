@@ -16,6 +16,7 @@ struct Home: View {
     @State var showAlert = false
     @State var deleteItem: Note?
     @State var updateNote = ""
+    @State var updateNoteId = ""
     
     @State var isEditMode: EditMode = .inactive
     
@@ -44,6 +45,7 @@ struct Home: View {
                     }
                     .onTapGesture {
                         self.updateNote = note.note
+                        self.updateNoteId = note.id
                         self.showAdd.toggle()
                     }
                 }
@@ -80,7 +82,7 @@ struct Home: View {
                 if (self.isEditMode == .inactive){
                     AddNoteView()
                 } else {
-                    UpdateNoteView(text: $updateNote)
+                    UpdateNoteView(text: $updateNote, noteId: $updateNoteId)
                 }
             }))
         }
@@ -99,6 +101,10 @@ struct Home: View {
             }
         }
         task.resume()
+        
+        if (self.isEditMode == .active) {
+            self.isEditMode = .inactive
+        }
     }
     
     func deleteNote() {
