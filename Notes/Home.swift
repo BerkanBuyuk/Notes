@@ -15,6 +15,7 @@ struct Home: View {
     
     @State var showAlert = false
     @State var deleteItem: Note?
+    @State var updateNote = ""
     
     @State var isEditMode: EditMode = .inactive
     
@@ -41,14 +42,19 @@ struct Home: View {
                         Text(note.note)
                             .padding()
                     }
+                    .onTapGesture {
+                        self.updateNote = note.note
+                        self.showAdd.toggle()
+                    }
                 }
             }
             .alert(isPresented: $showAlert, content: {
                 alert
             })
+            /*
             .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
                 AddNoteView()
-            })
+            })*/
             .onAppear(perform: {
                 fetchNotes()
             })
@@ -70,6 +76,12 @@ struct Home: View {
                 self.showAdd.toggle()
             }, label: {
                 Text("Add")
+            }).sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
+                if (self.isEditMode == .inactive){
+                    AddNoteView()
+                } else {
+                    UpdateNoteView(text: $updateNote)
+                }
             }))
         }
     }
