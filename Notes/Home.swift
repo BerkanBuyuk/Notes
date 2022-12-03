@@ -26,12 +26,22 @@ struct Home: View {
         
         NavigationView {
             List(self.notes) { note in
-                Text(note.note)
-                    .padding()
-                    .onLongPressGesture{
-                        self.showAlert.toggle()
-                        deleteItem = note
+                if (self.isEditMode == .inactive) {
+                    Text(note.note)
+                        .padding()
+                        .onLongPressGesture{
+                            self.showAlert.toggle()
+                            deleteItem = note
+                        }
+                } else {
+                    HStack {
+                        Image(systemName: "pencil.circle.fill")
+                            .foregroundColor(.yellow)
+                        
+                        Text(note.note)
+                            .padding()
                     }
+                }
             }
             .alert(isPresented: $showAlert, content: {
                 alert
