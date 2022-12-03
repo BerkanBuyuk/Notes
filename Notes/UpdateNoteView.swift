@@ -20,7 +20,9 @@ struct UpdateNoteView: View {
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 .clipped()
             
-            Button(action: updateNote) {
+            Button(action: {
+                updateNote()
+            }) {
                 Text("Update")
             }
             .padding(8)
@@ -62,7 +64,7 @@ struct UpdateNoteView: View {
         }
         task.resume()
         
-        //self.text = ""
+        self.text = ""
         presentationMode .wrappedValue.dismiss()
     }
     
