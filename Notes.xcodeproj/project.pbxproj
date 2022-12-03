@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA7D3F1D293BAB3A00BB6F8D /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3F1C293BAB3A00BB6F8D /* NotesApp.swift */; };
-		DA7D3F1F293BAB3A00BB6F8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3F1E293BAB3A00BB6F8D /* ContentView.swift */; };
+		DA7D3F1F293BAB3A00BB6F8D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3F1E293BAB3A00BB6F8D /* Home.swift */; };
 		DA7D3F21293BAB3C00BB6F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */; };
 		DA7D3F24293BAB3C00BB6F8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3F23293BAB3C00BB6F8D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,9 +16,10 @@
 /* Begin PBXFileReference section */
 		DA7D3F19293BAB3A00BB6F8D /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7D3F1C293BAB3A00BB6F8D /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
-		DA7D3F1E293BAB3A00BB6F8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA7D3F1E293BAB3A00BB6F8D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7D3F23293BAB3C00BB6F8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA7D3F2A293BB0BC00BB6F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,9 @@
 		DA7D3F1B293BAB3A00BB6F8D /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				DA7D3F2A293BB0BC00BB6F8D /* Info.plist */,
 				DA7D3F1C293BAB3A00BB6F8D /* NotesApp.swift */,
-				DA7D3F1E293BAB3A00BB6F8D /* ContentView.swift */,
+				DA7D3F1E293BAB3A00BB6F8D /* Home.swift */,
 				DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */,
 				DA7D3F22293BAB3C00BB6F8D /* Preview Content */,
 			);
@@ -137,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7D3F1F293BAB3A00BB6F8D /* ContentView.swift in Sources */,
+				DA7D3F1F293BAB3A00BB6F8D /* Home.swift in Sources */,
 				DA7D3F1D293BAB3A00BB6F8D /* NotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +272,7 @@
 				DEVELOPMENT_TEAM = C67W29R946;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +302,7 @@
 				DEVELOPMENT_TEAM = C67W29R946;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
