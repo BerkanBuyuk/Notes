@@ -11,6 +11,7 @@
 		DA7D3F1F293BAB3A00BB6F8D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3F1E293BAB3A00BB6F8D /* Home.swift */; };
 		DA7D3F21293BAB3C00BB6F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */; };
 		DA7D3F24293BAB3C00BB6F8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3F23293BAB3C00BB6F8D /* Preview Assets.xcassets */; };
+		DA7D3F2C293BB38200BB6F8D /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3F2B293BB38200BB6F8D /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7D3F23293BAB3C00BB6F8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7D3F2A293BB0BC00BB6F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA7D3F2B293BB38200BB6F8D /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				DA7D3F1E293BAB3A00BB6F8D /* Home.swift */,
 				DA7D3F20293BAB3C00BB6F8D /* Assets.xcassets */,
 				DA7D3F22293BAB3C00BB6F8D /* Preview Content */,
+				DA7D3F2B293BB38200BB6F8D /* AddNoteView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7D3F2C293BB38200BB6F8D /* AddNoteView.swift in Sources */,
 				DA7D3F1F293BAB3A00BB6F8D /* Home.swift in Sources */,
 				DA7D3F1D293BAB3A00BB6F8D /* NotesApp.swift in Sources */,
 			);
